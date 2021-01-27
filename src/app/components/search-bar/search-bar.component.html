@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+
+  <!-- <mat-toolbar-row>
+    <span>Second Line</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon"
+              aria-hidden="false"
+              aria-label="Example user verified icon">verified_user</mat-icon>
+  </mat-toolbar-row> -->
+
+  <mat-toolbar-row>
+    <mat-grid-list cols="4">
+      <mat-form-field>
+        <mat-label>Search for stocks</mat-label>
+        <input [(ngModel)]="searchTerm"
+               matInput>
+        <button mat-button
+                (click)="getStocks()">Search</button>
+      </mat-form-field>
+    </mat-grid-list>
+  </mat-toolbar-row>
+</mat-toolbar>
